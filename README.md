@@ -1,1 +1,1 @@
-## P3DX-robot (CirLab)
+## P3DX-robot (CirLab_NTNU)
