@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+
+<launch>
+
+  <!-- odom -->
+  <!-- <include file="$(find control)/launch/control_rosaria.launch"/> -->
+
+  <!-- laser -->
+  <include file="$(find laser)/launch/laser_urg_start.launch"/>
+
+  <!-- Arguments -->
+  <arg name="map_file" default="$(find rosaria_navigation_setting)maps/map_revise.yaml"/><!--revise map-->
+
+  <!-- tf -->
+  <node name="tf_transfer" pkg="tf_broadcaster" type="tf_transfer" respawn="false" required="true"/>
+
+  <!-- Map server -->
+  <node pkg="map_server" name="map_server" type="map_server" args="$(arg map_file)"  required="true"/>
+
+  <!-- AMCL -->
+  <include file="$(find rosaria_navigation_setting)/launch/amcl.launch" />
+
+  <!-- move_base -->
+  <include file="$(find rosaria_navigation_setting)/launch/move_base.launch"/>
+
+  <!-- rviz -->
+  <node pkg="rviz" type="rviz" name="rviz" output="screen"  required="true"/>
+
+</launch>

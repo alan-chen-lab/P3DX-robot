@@ -1,0 +1,8 @@
+prefix=/home/cir/catkin_ws_rosaria/install
+
+Name: tf_broadcaster
+Description: Description of tf_broadcaster
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

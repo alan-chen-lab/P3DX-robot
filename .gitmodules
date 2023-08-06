@@ -1,0 +1,21 @@
+[submodule "src/geometry2"]
+	path = src/geometry2
+	url = git@github.com:ros/geometry2.git
+[submodule "src/navigation"]
+	path = src/navigation
+	url = git@github.com:ros-planning/navigation.git
+[submodule "src/navigation_msgs"]
+	path = src/navigation_msgs
+	url = git@github.com:ros-planning/navigation_msgs.git
+[submodule "src/openslam_gmapping"]
+	path = src/openslam_gmapping
+	url = git@github.com:ros-perception/openslam_gmapping.git
+[submodule "src/rosaria"]
+	path = src/rosaria
+	url = git@github.com:amor-ros-pkg/rosaria.git
+[submodule "src/rosaria_client"]
+	path = src/rosaria_client
+	url = git@github.com:pengtang/rosaria_client.git
+[submodule "src/slam_gmapping"]
+	path = src/slam_gmapping
+	url = git@github.com:ros-perception/slam_gmapping.git
